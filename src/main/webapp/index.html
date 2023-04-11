@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PAW</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700" rel="stylesheet" type="text/css" />		
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500, 600,700" rel="stylesheet" type="text/css" />
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Ejemplos de internacionalización</h1>
+        <div class="menu">
+            <div class="ejemplo row">
+                <h2>Arquitectura i18n</h2>
+                <ul>
+                    <li>N versiones de vista: <a href="hello1">Probar Hello1</a></li>
+                    <li>1 vista con referencias a mensajes: <a href="hello2">Probar Hello2</a></li>
+                </ul>
+                <p></p>
+            </div>
+
+            <div class="ejemplo row">
+                <h2>Conceptos</h2>
+                <ul>
+                    <li><a href="default-locale">Locale por defecto</a></li>
+                </ul>
+                <p></p>
+            </div>            
+
+
+            <div class="ejemplo">
+                <h2>Básico</h2>
+                <ul>
+                    <li>Fija el locale manualmente</li>
+                </ul>
+                <p><a href="saludo0.jsp">Probar saludo0.jsp</a></p>
+            </div>
+            <div class="ejemplo ext">
+                <h2>Locale indicado por el navegador</h2>
+                <ul>
+                    <li>Toma el locale indicado por el navegador
+                        (o lo toma de la sesión, si es que alguna página anterior lo hubiese puesto en la sesion).</li>
+                    <li>Para anular el efecto de la sesión debes cerrar el navegador y recargar la página.</li>
+                </ul>
+                <p><a href="saludoBrowser.jsp">Probar saludoBrowser.jsp</a></p>
+            </div>
+            <div class="ejemplo ext">
+                <h2>Selector de idiomas</h2>
+                <ul>
+                    <li>Toma el locale seleccionado en un selector y lo guarda es sesión.</li>
+                    <li>La página contiene una parte no internacionalizada y otra internacionalizada.</li>
+                    <li>Se incluye un enlace ("Siguiente") a otra página que sigue estando internacionalida</li>
+                </ul>
+                <p><a href="saludo1.jsp">Probar saludo1.jsp</a></p>
+            </div>
+            <div class="ejemplo horas">
+                <h2>Fechas y horas</h2>
+                <p><a href="horas1.jsp">Probar horas1.jsp</a></p>
+                <p><a href="horas1.jsp?crashDate=24/10/2029">Probar horas1.jsp (parseDate)</a></p>
+            </div>
+            <div class="ejemplo horas">
+                <h2>Fechas y horas con zona horaria</h2>
+                <p><a href="horas2.jsp">Probar horas2.jsp</a></p>
+            </div>
+            <div class="ejemplo numeros">
+                <h2>Números y monedas</h2>
+                <p><a href="numeros1.jsp">Probar numeros1.jsp</a></p>
+                <p><a href="numeros2.jsp">Probar numeros2.jsp</a></p>
+            </div>
+        </div>
+    </body>
+</html>
