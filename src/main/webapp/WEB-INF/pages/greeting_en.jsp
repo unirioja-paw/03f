@@ -8,5 +8,11 @@
     </head>
     <body>
         <h1>Hello world!</h1>
+
+        <h2>Product detail</h2>
+
+        <img src="assets/images/electrosa/aspirador/aspirador00.jpg"/>
+
+        <b>Price: </b> 125€
     </body>
 </html>
