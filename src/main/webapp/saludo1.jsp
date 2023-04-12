@@ -64,7 +64,11 @@
           variable "mensajesConParam", es decir, el de los ficheros "mensajesP" 
         --%>
         <%-- La clave usada tiene parámetros --%>
-        <p><fmt:message key="saludo" bundle="${mensajesConParam}"><fmt:param value="${userName}"/></fmt:message></p>
+        <p>
+            <fmt:message key="saludo" bundle="${mensajesConParam}">
+                <fmt:param value="${userName}"/>
+            </fmt:message>
+        </p>
 
         <%--
           Aquí las etiquetas <fmt:message no especifican ningún bundle, por lo que 
